@@ -16,6 +16,12 @@ public class OldFashionPound {
     Pound myDiffResult = makeDiff(myFirstPound, secondPound);
     System.out.println(myDiffResult);
 
+    Pound myMultiplyResult = multiply(myFirstPound, 2);
+    System.out.println(myMultiplyResult);
+
+    Pound myDivisionResult = divide(myFirstPound, 3);
+    System.out.println(myDivisionResult);
+
   }
 
   public static Pound makeSum(Pound firstPound, Pound secondPound) {
@@ -26,9 +32,27 @@ public class OldFashionPound {
 
   }
 
+
+
   public static Pound makeDiff(Pound firstPound, Pound secondPound) {
 
     int myTotal = firstPound.getTotalValue() - secondPound.getTotalValue();
+    System.out.println(myTotal);
+    return new Pound(myTotal);
+
+  }
+
+  public static Pound multiply(Pound firstPound, int value) {
+
+    int myTotal = firstPound.getTotalValue() * value;
+    System.out.println(myTotal);
+    return new Pound(myTotal);
+
+  }
+
+  public static Pound divide(Pound firstPound, int value) {
+
+    int myTotal = firstPound.getTotalValue() / value;
     System.out.println(myTotal);
     return new Pound(myTotal);
 
