@@ -10,8 +10,14 @@ public class OldFashionPound {
     myFirstPound.rightFormat();
     System.out.println( myFirstPound.toString());
 
+
   }
 
+  public Pound makeSum (Pound firstPound, Pound secondPound) {
 
+    int myTotal = firstPound.getTotalValue() + secondPound.getTotalValue();
+    return new Pound(myTotal);
+
+  }
 
 }
